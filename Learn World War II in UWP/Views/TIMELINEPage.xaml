@@ -1,0 +1,162 @@
+﻿<Page
+    x:Class="Learn_World_War_II_in_UWP.Views.TIMELINEPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+            <ParallaxView Source="{x:Bind ForegroundElement}" VerticalShift="50">
+
+                <!-- Background element -->
+                <Image x:Name="BackgroundImage" Source="/Assets/SampleData/SamplePhoto13.png"
+               Stretch="UniformToFill"/>
+
+            </ParallaxView>
+            <ParallaxView Source="{x:Bind ForegroundElement}" VerticalShift="500">
+                <TextBlock Text="Timeline of World War II第二次世界大戰年表"
+                       HorizontalAlignment="Right" FontWeight="Bold" Margin="10"/>
+            </ParallaxView>
+
+            <!-- Foreground element -->
+            <ListView x:Name="ForegroundElement" FontSize="24" >
+                <x:String></x:String>
+                <x:String>the Second World War(1939-1945)</x:String>
+                <x:String></x:String>
+                <x:String>1939年9月1日—1945年9月2日（6年又1天）</x:String>
+                <x:String>同盟国胜利,纳粹德国终结，日本和意大利殖民帝国终结,联合国创立,美国与苏联发展成为超级大国，冷战开始。</x:String>
+                <x:String></x:String>
+                <x:String>1939年</x:String>
+                <x:String>9月1日 德国进攻波兰</x:String>
+                <x:String>9月3日 英、法对德宣战二次世界大战全面爆发</x:String>
+                <x:String>9月4日 日本政府声明不参与欧洲战争</x:String>
+                <x:String>9月5日 美政府声明美国在战争中保持中立</x:String>
+                <x:String>9月8-28日 华沙保卫战</x:String>
+                <x:String>9月12日 同盟国在阿贝维尔城召开第一次最高军事会议</x:String>
+                <x:String>9月17日 苏联红军越过苏波国界，进驻西乌克兰和白俄罗斯</x:String>
+                <x:String>11月1-2日 苏联最高苏维埃决定接受西乌克兰和西白俄罗斯加入苏联，并与乌克兰、白俄罗斯苏维埃社会主义共和国合并</x:String>
+                <x:String>11月4日 美国会通过“中立法”修正案</x:String>
+                <x:String>
+                    11月30-1940年3月12日 苏芬战争
+                </x:String>
+                <x:String>
+                    1940年
+                </x:String>
+                <x:String>
+                    2月24日 德最高统帅部批准进攻法、比、荷的作战计划
+                </x:String>
+
+                <x:String>
+                    4月9日 德军侵入挪威和丹麦
+                </x:String>
+                <x:String>
+                    5月10日 德军侵入比利时和荷兰
+                </x:String>
+                <x:String>
+                    5月10日 英国张伯伦下台，丘吉尔组阁
+                </x:String>
+                <x:String>5月14日 荷兰军队投降</x:String>
+                <x:String>5月26-6月3日 英、法军队敦刻尔克大撤退</x:String>
+                <x:String>5月28日 比利时军队投降</x:String>
+                <x:String>6月10日 意大利对英法宣战</x:String>
+                <x:String>6月14日 德军攻入巴黎</x:String>
+                <x:String>6月18日 戴高乐将军号召进行抵抗并组织"自由法国"运动</x:String>
+                <x:String>6月22日 法德签订康边停战协定。法兰西第三共和国灭亡</x:String>
+                <x:String>7月19日-8月19日 意大利军队进攻北非</x:String>
+                <x:String>7月16日 希特勒下令准备"海狮战役"</x:String>
+                <x:String>7月31日 德国军政领导人会议决定准备发动对苏战争，并增加到180个陆军师</x:String>
+                <x:String>8月13日 德空军开始集中轰炸英国-不列颠空战</x:String>
+                <x:String>9月27日 德、意、日在柏林签订三国协定</x:String>
+                <x:String>10月12日 德军进攻罗马尼亚</x:String>
+                <x:String>10月28日 意大利进攻希腊</x:String>
+                <x:String>12月18日 希特勒签署关于对苏战争的第21号命令（“巴巴罗萨计划”）苏德战争开始</x:String>
+                <x:String>1941年</x:String>
+                <x:String>1月22日 英军占领托布鲁克（北非）</x:String>
+                <x:String>2月9日 德国宣布吞并卢森堡</x:String>
+                <x:String>4月13日 苏日中立条约签订</x:String>
+                <x:String>4月17日 南斯拉夫军队投降</x:String>
+                <x:String>4月21日 希腊军队投降</x:String>
+                <x:String>6月22日 德国法西斯侵入苏联，苏联卫国战争开始</x:String>
+                <x:String>6月28日 德军占领明斯克</x:String>
+                <x:String>7月10日-9月10日 斯摩棱斯克保卫战</x:String>
+                <x:String>8月14日 英美签订大西洋宪章</x:String>
+                <x:String>8月29日 德意就在欧洲建立“新秩序”发表宣言</x:String>
+                <x:String>9月8日 德军包围列宁格勒</x:String>
+                <x:String>9月30日-1942年4月20日莫斯科保卫战</x:String>
+                <x:String>10月19日 英国军事生产工人全国会议通过在欧洲开辟第二战场的协议</x:String>
+                <x:String>10月30-1942年7月4日 塞瓦斯托波尔保卫战</x:String>
+                <x:String>12月5日 苏军在莫斯科转入反攻</x:String>
+                <x:String>12月7日 日本偷袭珍珠港，太平洋战争爆发</x:String>
+                <x:String>12月19日 希特勒任德军最高统帅</x:String>
+                <x:String>1942年</x:String>
+                <x:String>1月1日 26国在华盛顿签订 《同盟国宣言》</x:String>
+                <x:String>5月4-8日 珊瑚海海战</x:String>
+                <x:String>5月5日 日军占领菲律宾群岛</x:String>
+                <x:String>5月5日 日军占领瓜达尔卡纳群岛</x:String>
+                <x:String>6月4-7日 日本舰队在中途岛战败</x:String>
+                <x:String>7月17-1943年斯大林格勒战役，第二次世界大战的转折点</x:String>
+                <x:String>8月12-15日 英苏首脑在莫斯科会谈</x:String>
+                <x:String>10月23日 英国在阿拉曼开始进攻</x:String>
+                <x:String>11月13日 英军进入托布鲁克</x:String>
+                <x:String>1943年</x:String>
+                <x:String>1月13日 德国宣布总动员</x:String>
+                <x:String>1月14-26日英美卡萨布兰卡会谈</x:String>
+                <x:String>2月8-14日 苏军解放库尔斯克、克拉斯诺达尔、顿河罗斯托夫、伏罗希洛夫格勒</x:String>
+                <x:String>3月21日 英美军开始进攻突尼斯</x:String>
+                <x:String>5月12-13日 德“非洲”集团军群在突尼斯投降</x:String>
+                <x:String>7月10日 英美陆战队在西西里岛登陆</x:String>
+                <x:String>7月24-25日 意大利法西斯政府被推翻，墨索里尼被捕，巴多里奥政府建立</x:String>
+                <x:String>9月8日 意大利宣告投降。德军占领意大利北部和中部各省</x:String>
+                <x:String>11月20日 惨烈的两栖作战-塔拉瓦</x:String>
+                <x:String>11月22-26日 开罗会议</x:String>
+                <x:String>11月28-12月1日 德黑兰会议</x:String>
+                <x:String>1944年</x:String>
+                <x:String>6月6日 英美军队在诺曼底登陆，欧洲第二战场开辟</x:String>
+                <x:String>6月13日 德国V-1飞弹首次射击英国本土</x:String>
+                <x:String>6月15日 美军在赛班岛登陆</x:String>
+                <x:String>6月15日 美军在赛班岛登陆</x:String>
+                <x:String>6月23-24日 苏军在白俄罗斯开始进攻</x:String>
+                <x:String>7月18日 日本东条英机内阁辞职，小矶国昭组阁</x:String>
+                <x:String>8月15日 盟军在法国南部登陆</x:String>
+                <x:String>8月26日 美英事实上承认戴高乐政府</x:String>
+                <x:String>10月20日美军在莱特岛登陆</x:String>
+                <x:String>10月24-25日 美日舰队菲律宾海战</x:String>
+                <x:String>12月16-25日 德军在阿登反攻</x:String>
+                <x:String>1945年</x:String>
+                <x:String>2月4-11日 雅尔塔会议</x:String>
+                <x:String>2月8日 盟军在莱茵河地区开始进攻</x:String>
+                <x:String>2月19-3月17日 美军和日军在硫磺岛交战</x:String>
+                <x:String>4月1日 美军占领冲绳岛</x:String>
+                <x:String>4月12日 美国罗斯福总统逝世</x:String>
+                <x:String>4月16日 苏军开始进攻柏林</x:String>
+                <x:String>4月28日 墨索里尼被处死</x:String>
+                <x:String>4月29日 德军在北意大利投降</x:String>
+                <x:String>4月30日 希特勒自杀</x:String>
+                <x:String>5月2日 苏军占领柏林</x:String>
+                <x:String>5月8日 签署德军无条件投降书</x:String>
+                <x:String>6月5日 苏、美、英、法宣告德国战败，由四大盟国掌握德国最高政权</x:String>
+                <x:String>6月24日 莫斯科举行胜利阅兵式</x:String>
+                <x:String>6月26日签署联合国宪章</x:String>
+                <x:String>7月17日-8月2日 波茨坦会议</x:String>
+                <x:String>8月6日 美国原子弹炸毁广岛</x:String>
+                <x:String>8月8日 苏军对日宣战</x:String>
+                <x:String>8月9日 原子弹轰炸长崎</x:String>
+                <x:String>8月14日 苏中签订友好同盟条约</x:String>
+                <x:String>8月15日 日本宣布无条件投降</x:String>
+                <x:String>9月2日 日本代表在东京湾美国“密苏里”号战列舰上签署投降书</x:String>
+                <x:String>9月2日 第二次世界大战正式结束</x:String>
+                <x:String></x:String>
+                <x:String>END</x:String>
+            </ListView>
+
+
+        </Grid>
+    </Grid>
+</Page>

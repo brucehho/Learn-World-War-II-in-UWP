@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7CF3D375-BF40-49B0-99DA-0C44BA40A25D}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learn_World_War_II_in_UWP</RootNamespace>
+    <AssemblyName>Learn_World_War_II_in_UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>Learn World War II in UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>NU1603;2008;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.8</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Animations">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.0.181018004</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmLightStd10">
+      <Version>5.4.1.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-us\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderBehavior.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderMode.cs" />
+    <Compile Include="Helpers\EnumToBooleanConverter.cs" />
+    <Compile Include="Helpers\ImagesNavigationHelper.cs" />
+    <Compile Include="Helpers\NavHelper.cs" />
+    <Compile Include="Helpers\SettingsStorageExtensions.cs" />
+    <Compile Include="Services\ActivationService.cs" />
+    <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
+    <Compile Include="Services\NavigationServiceEx.cs" />
+    <Compile Include="Services\ThemeSelectorService.cs" />
+    <Compile Include="ViewModels\ARTSDetailViewModel.cs" />
+    <Compile Include="ViewModels\ARTSViewModel.cs" />
+    <Compile Include="ViewModels\GENERALSViewModel.cs" />
+    <Compile Include="ViewModels\HOMEViewModel.cs" />
+    <Compile Include="ViewModels\MAINTOPICSViewModel.cs" />
+    <Compile Include="ViewModels\MEDIAViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="ViewModels\TIMELINEViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelLocator.cs" />
+    <Compile Include="Views\ARTSDetailPage.xaml.cs">
+      <DependentUpon>ARTSDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ARTSPage.xaml.cs">
+      <DependentUpon>ARTSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GENERALSDetailControl.xaml.cs">
+      <DependentUpon>GENERALSDetailControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GENERALSPage.xaml.cs">
+      <DependentUpon>GENERALSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HOMEPage.xaml.cs">
+      <DependentUpon>HOMEPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MAINTOPICSPage.xaml.cs">
+      <DependentUpon>MAINTOPICSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MEDIAPage.xaml.cs">
+      <DependentUpon>MEDIAPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellPage.xaml.cs">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TIMELINEPage.xaml.cs">
+      <DependentUpon>TIMELINEPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Styles\Image.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\_Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\_FontSizes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\_Thickness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ARTSDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ARTSPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\GENERALSDetailControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\GENERALSPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\HOMEPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MAINTOPICSPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MEDIAPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ShellPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TIMELINEPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ResourceExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\10GENERALS\10GPic\01\001.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\01\003.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\01\02.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\01\375px-Monty,_wavvel,_auk.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\02\270px-Adm._Chester_W._Nimitz_and_Adm._William_F._Halsey_aboard_USS_Curtiss_%28AV-4%29_at_Espiritu_Santo,_20_January_1943_%2880-G-34822%29.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\02\330px-Nimitz_on_Grayling%3b0820904.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\02\330px-USS_Lexington_%28CV-2%29_burning_and_sinking_on_8_May_1942.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\02\Attack_on_Pearl_Harbor_Japanese_planes_view.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\03\330px-MacArthur_arrives_at_Atsugi%3bac01732.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\03\330px-Macarthur_hirohito.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\03\440px-Douglas_MacArthur_speaking_at_Soldier_Field_HD-SN-99-03036.JPEG" />
+    <Content Include="Assets\10GENERALS\10GPic\03\440px-IncheonLandingMcArthur.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\04\1951_Chung_Baik_Eisenhower.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\04\300px-New_Government_of_the_U.S._-_NARA_-_5730034.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\04\330px-Funeral_services_for_Dwight_D._Eisenhower,_March_1969.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\04\450px-U.S._President_Eisenhower_visited_TAIWAN_美國總統艾森豪於1960年6月訪問臺灣台北時與蔣中正總統-2.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\05\375px-Bundesarchiv_Bild_101I-013-0064-35,_Polen,_Bormann,_Hitler,_Rommel,_v._Reichenau.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\05\375px-Bundesarchiv_Bild_146-1972-045-02,_Frankreich,_Erwin_Rommel_und_Offiziere_mit_Karten.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\05\375px-Rommel_with_his_aides.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\05\Bundesarchiv_Bild_146-1970-076-43,_Paris,_Erwin_Rommel_bei_Siegesparade.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\05\Bundesarchiv_Bild_183-1987-0313-503,_Goslar,_Hitler_schreitet_Ehrenkompanie_ab.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\06\375px-Allies_at_the_Brandenburg_Gate,_1945.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\06\375px-Bundesarchiv_Bild_183-14059-0018,_Berlin,_Oberbefehlshaber_der_vier_Verbündeten.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\06\375px-Montgomery_receives_Order_of_Victory_HD-SN-99-02756_cropped.JPG" />
+    <Content Include="Assets\10GENERALS\10GPic\06\Zhukov_1945_E010750410-v8.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\07\091220_guderian.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\07\300px-Bundesarchiv_Bild_101I-139-1112-17,_Heinz_Guderian.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\07\440px-Tigerfibel_cover.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\07\440px-Военные_манёвры,_Германия,_1935.2.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\08\440px-George_S._Patton_-_France_-_1918.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\08\440px-Ohrdruf_Corpses_Eisenhower.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\08\440px-Patton_speaking_with_Lt._Col._Lyle_Bernard,_at_Brolo,_circa_1943.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\08\600px-Patton_during_a_welcome_home_parade_in_Los_Angeles,_June_9,_1945.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\09\440px-Pearl_Harbor-_Nakajima_B5N2_over_Hickam-_80G178985.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\09\Isoroku_Yamamoto_41_.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\09\Yamamoto_last_image_alive.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\09\Yamamoto_state_funeral.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\10\340px-Omarbradleywestpoint.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\10\Cherbourg_1944_s191143.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\10\General_Montgomery_with_Generals_Patton_%28left%29_and_Bradley_%28centre%29_at_21st_Army_Group_HQ,_Normandy,_7_July_1944._B6551.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\10\Marshall_arnold_and_bradley.jpg" />
+    <Content Include="Assets\10GENERALS\10GPic\新建文本文档.txt" />
+    <Content Include="Assets\10GENERALS\Bernard Law MontgomeryP.jpg" />
+    <Content Include="Assets\10GENERALS\Chester-W.-Nimitz-militarymuseumP.jpg" />
+    <Content Include="Assets\10GENERALS\Douglas MacArthurP.jpg" />
+    <Content Include="Assets\10GENERALS\Dwight_D_EisenhowerP.jpg" />
+    <Content Include="Assets\10GENERALS\Erwin RommelP.jpg" />
+    <Content Include="Assets\10GENERALS\General_BradleyP.jpg" />
+    <Content Include="Assets\10GENERALS\GEORGE PATTONP.jpg" />
+    <Content Include="Assets\10GENERALS\Georgy Konstantinovich ZhukovP.jpg" />
+    <Content Include="Assets\10GENERALS\Heinz Wilhelm GuderianP.jpg" />
+    <Content Include="Assets\10GENERALS\Isoroku YamamotoP.jpg" />
+    <Content Include="Assets\GIF\giphy.gif" />
+    <Content Include="Assets\GIF\giphy01.gif" />
+    <Content Include="Assets\GIF\giphy02.gif" />
+    <Content Include="Assets\GIF\giphy10.gif" />
+    <Content Include="Assets\GIF\giphy11.gif" />
+    <Content Include="Assets\GIF\giphy12.gif" />
+    <Content Include="Assets\GIF\giphy13.gif" />
+    <Content Include="Assets\GIF\giphy14.gif" />
+    <Content Include="Assets\GIF\giphy15.gif" />
+    <Content Include="Assets\GIF\giphy16.gif" />
+    <Content Include="Assets\GIF\giphy17.gif" />
+    <Content Include="Assets\GIF\giphy18.gif" />
+    <Content Include="Assets\GIF\giphy19.gif" />
+    <Content Include="Assets\GIF\giphy7.gif" />
+    <Content Include="Assets\GIF\giphy8.gif" />
+    <Content Include="Assets\GIF\giphy9.gif" />
+    <Content Include="Assets\GIF\giphyBERLIN.gif" />
+    <Content Include="Assets\GIF\Second_world_war_europe_animation_small.gif" />
+    <Content Include="Assets\GIF\World_War_II_alliances_animated_map.gif" />
+    <Content Include="Assets\GIF\ww2_quarterly.0.gif" />
+    <Content Include="Assets\Head\00\1321.jpg" />
+    <Content Include="Assets\Head\01\9692548028_07f35496d5_b.jpg" />
+    <Content Include="Assets\Head\01\b43e728b4710b912568672ccc2fdfc0392452268.jpg" />
+    <Content Include="Assets\Head\01\head01.jpg" />
+    <Content Include="Assets\Head\02\95644999cf8d204a2193f67852b76c4f.jpg" />
+    <Content Include="Assets\Head\02\head002.jpg" />
+    <Content Include="Assets\Head\02\other_none933.jpg" />
+    <Content Include="Assets\Head\03\11879321.jpg" />
+    <Content Include="Assets\Head\03\head04.jpg" />
+    <Content Include="Assets\Head\03\head06.jpg" />
+    <Content Include="Assets\Head\03\World-War-II-How-have-YOU-aided-the-front-USSR-Soviet-Poster-Canvas-Painting-DIY-Wall.jpg" />
+    <Content Include="Assets\Head\04\150612vintagepropaganda.jpg" />
+    <Content Include="Assets\Head\04\30s_poster_2.jpg" />
+    <Content Include="Assets\Head\04\headja.jpg" />
+    <Content Include="Assets\Head\05\1280px-INF3-334_Unity_of_Strength_American,_Chinese_and_British_soldiers_with_flags_of_their_countries.jpg" />
+    <Content Include="Assets\Head\05\headcommming.jpg" />
+    <Content Include="Assets\Head\05\ww2-war-poster-43.jpg" />
+    <Content Include="Assets\Head\06\a.jpg" />
+    <Content Include="Assets\Head\06\head03.jpg" />
+    <Content Include="Assets\Head\06\head05.jpg" />
+    <Content Include="Assets\Head\06\previewfile_1167509232.jpg" />
+    <Content Include="Assets\Head\06\s-l1000.jpg" />
+    <Content Include="Assets\Head\07\head07.jpg" />
+    <Content Include="Assets\Head\07\headover.jpg" />
+    <Content Include="Assets\Head\07\World20Warposter.jpg" />
+    <Content Include="Assets\Head\headUnited.jpg" />
+    <Content Include="Assets\Head\Infobox_collage_for_WWII.png" />
+    <Content Include="Assets\Head\load_9.jpg" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\MainPic\三國侵略\1600px-Hokushin-ron-Map.svg.png" />
+    <Content Include="Assets\MainPic\三國侵略\450px-Shanghai1937KMT_machine_gun_nest.jpg" />
+    <Content Include="Assets\MainPic\三國侵略\600px-AO-Etiopia-1936-A-artiglieria-nel-Tembien.jpg" />
+    <Content Include="Assets\MainPic\三國侵略\Infobox_collage_for_Spanish_Civil_War.jpg" />
+    <Content Include="Assets\MainPic\三國侵略\Mogadishu1936.jpg" />
+    <Content Include="Assets\MainPic\三國侵略\Second_Sino-Japanese_War_collection.png" />
+    <Content Include="Assets\MainPic\三國侵略\（Marco Polo Bridge Incident）.png" />
+    <Content Include="Assets\MainPic\兵鋒勢盡\727px-Map_Battle_of_Stalingrad-lt.svg.png" />
+    <Content Include="Assets\MainPic\兵鋒勢盡\Karte_-_Schlacht_bei_Alam_Halfa_%281942%29.png" />
+    <Content Include="Assets\MainPic\兵鋒勢盡\pacific_feb_1945.jpg" />
+    <Content Include="Assets\MainPic\兵鋒勢盡\wwii1230.jpg" />
+    <Content Include="Assets\MainPic\前因\360px-Reichstagsbrand.jpg" />
+    <Content Include="Assets\MainPic\前因\Africa-1914.jpg" />
+    <Content Include="Assets\MainPic\前因\Bundesarchiv_Bild_102-10541,_Weimar,_Aufmarsch_der_Nationalsozialisten.jpg" />
+    <Content Include="Assets\MainPic\前因\Crowd_outside_nyse.jpg" />
+    <Content Include="Assets\MainPic\前因\Map_3.1_Empires_pre_WWI_1914.jpg" />
+    <Content Include="Assets\MainPic\前因\Shanghai_1932_19th_route.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Air_Attack_on_Japanese_Carriers_Kagi_and_Akagi,_Midway_Battle.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\allied-flags-world-war-ii-american-school.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Battle_of_Midway,_Movement_of_Fleets_%28CHN%29.svg.png" />
+    <Content Include="Assets\MainPic\同盟反攻\Bundesarchiv_Bild_183-J24359,_Rumänien,_Kolonne_von_Panzer_V_%28Panther%29.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Cairo_conference.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Chinese_nationalist_troops_crossing_the_Three_Gorges_at_West_Hupei.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Eastern_Front_1943-08_to_1944-12.png" />
+    <Content Include="Assets\MainPic\同盟反攻\Invasionofitaly1943.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\Marines_rest_in_the_field_on_Guadalcanal.jpg" />
+    <Content Include="Assets\MainPic\同盟反攻\th55ND109W.jpg" />
+    <Content Include="Assets\MainPic\天下大亂\2000px-WWII_in_Europe_1939-1941-fr.svg.png" />
+    <Content Include="Assets\MainPic\天下大亂\After+a+series+of+conquests+in+1941+and+1942,+the+Japanese+were+forced+gradually+to+fall+back+before+advancing+U.S.+forces.jpg" />
+    <Content Include="Assets\MainPic\天下大亂\Map_8.2_WWII_1941.jpg" />
+    <Content Include="Assets\MainPic\天下大亂\Map_of_the_Mediterranean_Sea_in_Summer_1942.jpg" />
+    <Content Include="Assets\MainPic\天下大亂\Second_world_war_asia_1943-1945_map_fr-1.png" />
+    <Content Include="Assets\MainPic\干戈止息\2096834-3e618687d5a70eab.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\2096834-f94dd46cff3704af.png" />
+    <Content Include="Assets\MainPic\干戈止息\910545-596b6a913aa4d601.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\910545-785d248c36cd99dd.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\Reichstag_after_the_allied_bombing_of_Berlin.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\Shigemitsu-signs-surrender.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\Wilhelm_Keitel_Kapitulation.jpg" />
+    <Content Include="Assets\MainPic\干戈止息\Yalta_summit_1945_with_Churchill,_Roosevelt,_Stalin.jpg" />
+    <Content Include="Assets\MainPic\戰後\1024px-F-14_Tomcat_VF-114_escorting_TU-95_Bear.jpg" />
+    <Content Include="Assets\MainPic\戰後\1280px-World_War_II_Casualties.svg.png" />
+    <Content Include="Assets\MainPic\戰後\1920px-Map-Germany-1945.svg.png" />
+    <Content Include="Assets\MainPic\戰後\Berlinermauer.jpg" />
+    <Content Include="Assets\MainPic\戰後\Cold_war_europe_military_alliances_map_zh-classical.png" />
+    <Content Include="Assets\MainPic\戰後\Cold_War_Map_1980.png" />
+    <Content Include="Assets\MainPic\戰後\EasternBloc_BasicMembersOnly_sch.svg.png" />
+    <Content Include="Assets\MainPic\戰後\Post Cold War 1990-1995.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\800px-Deutscher_Bund.svg.png" />
+    <Content Include="Assets\MainPic\歐戰再啓\Battle_of_Poland.png" />
+    <Content Include="Assets\MainPic\歐戰再啓\Bundesarchiv_Bild_146-1976-071-36,_Polen,_an_der_Brahe,_deutsche_Panzer.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\Bundesarchiv_Bild_183-R69173,_Münchener_Abkommen,_Staatschefs.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\Bundesarchiv_Bild_183-S52480,_Dtsch.-Sowjet._Grenz-_u._Freundschaftsvertrag.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\Granica-zrywanie_godła.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\MolotovRibbentropStalin.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\MunichAgreement.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\Polish_Corridor.PNG" />
+    <Content Include="Assets\MainPic\歐戰再啓\Soviet_invasion_on_Poland_1939.jpg" />
+    <Content Include="Assets\MainPic\歐戰再啓\Weimar_Republic_states_map.svg.png" />
+    <Content Include="Assets\MainPic\軸心敗潰\1024px-Douglas_MacArthur_lands_Leyte1.jpg" />
+    <Content Include="Assets\MainPic\軸心敗潰\1187px-1944_NormandyLST.jpg" />
+    <Content Include="Assets\MainPic\軸心敗潰\1280px-Zuikaku_Cape_Engano.jpg" />
+    <Content Include="Assets\MainPic\軸心敗潰\450px-Paris1944-improved.jpg" />
+    <Content Include="Assets\MainPic\軸心敗潰\Triple_Occupation_of_Greece.png" />
+    <Content Include="Assets\MainPic\軸心敗潰\Yalta_Conference_%28Churchill,_Roosevelt,_Stalin%29.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\1280px-Italian_Invasion_1940_in_Pindus_Epirus.svg.png" />
+    <Content Include="Assets\MainPic\軸心進兵\1938_Naka_yoshi_sangoku.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\1941_map_soviet_winter_counteroffensive.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\948px-France_map_Lambert-93_with_regions_and_departments-occupation.svg.png" />
+    <Content Include="Assets\MainPic\軸心進兵\Battle_of_Greece_WWII_1941_map-875x1024.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\Bundesarchiv_Bild_101I-126-0350-26A,_Paris,_Einmarsch,_Parade_deutscher_Truppen.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\Bundesarchiv_Bild_183-L09218,_Berlin,_Japanische_Botschaft.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\Operation-Barbarossa.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\Operazione-leone-marino.PNG" />
+    <Content Include="Assets\MainPic\軸心進兵\Second_world_war_asia_1937-1942_map_de.png" />
+    <Content Include="Assets\MainPic\軸心進兵\Second_world_war_europe_1941-1942_map_en.png" />
+    <Content Include="Assets\MainPic\軸心進兵\s_w42_00623018.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\thDGW7IXF2.jpg" />
+    <Content Include="Assets\MainPic\軸心進兵\View_from_St_Paul%27s_Cathedral_after_the_Blitz.jpg" />
+    <Content Include="Assets\PlaceholderImage.png" />
+    <Content Include="Assets\SampleData\SamplePhoto1.png" />
+    <Content Include="Assets\SampleData\SamplePhoto10.png" />
+    <Content Include="Assets\SampleData\SamplePhoto11.png" />
+    <Content Include="Assets\SampleData\SamplePhoto12.png" />
+    <Content Include="Assets\SampleData\SamplePhoto13.png" />
+    <Content Include="Assets\SampleData\SamplePhoto14.png" />
+    <Content Include="Assets\SampleData\SamplePhoto15.png" />
+    <Content Include="Assets\SampleData\SamplePhoto16.png" />
+    <Content Include="Assets\SampleData\SamplePhoto17.png" />
+    <Content Include="Assets\SampleData\SamplePhoto18.png" />
+    <Content Include="Assets\SampleData\SamplePhoto19.png" />
+    <Content Include="Assets\SampleData\SamplePhoto2.png" />
+    <Content Include="Assets\SampleData\SamplePhoto20.png" />
+    <Content Include="Assets\SampleData\SamplePhoto21.png" />
+    <Content Include="Assets\SampleData\SamplePhoto22.png" />
+    <Content Include="Assets\SampleData\SamplePhoto23.png" />
+    <Content Include="Assets\SampleData\SamplePhoto24.png" />
+    <Content Include="Assets\SampleData\SamplePhoto25.png" />
+    <Content Include="Assets\SampleData\SamplePhoto26.png" />
+    <Content Include="Assets\SampleData\SamplePhoto27.png" />
+    <Content Include="Assets\SampleData\SamplePhoto28.png" />
+    <Content Include="Assets\SampleData\SamplePhoto29.png" />
+    <Content Include="Assets\SampleData\SamplePhoto3.png" />
+    <Content Include="Assets\SampleData\SamplePhoto30.png" />
+    <Content Include="Assets\SampleData\SamplePhoto31.png" />
+    <Content Include="Assets\SampleData\SamplePhoto32.png" />
+    <Content Include="Assets\SampleData\SamplePhoto33.png" />
+    <Content Include="Assets\SampleData\SamplePhoto34.png" />
+    <Content Include="Assets\SampleData\SamplePhoto35.png" />
+    <Content Include="Assets\SampleData\SamplePhoto36.png" />
+    <Content Include="Assets\SampleData\SamplePhoto37.png" />
+    <Content Include="Assets\SampleData\SamplePhoto38.png" />
+    <Content Include="Assets\SampleData\SamplePhoto39.png" />
+    <Content Include="Assets\SampleData\SamplePhoto4.png" />
+    <Content Include="Assets\SampleData\SamplePhoto40.png" />
+    <Content Include="Assets\SampleData\SamplePhoto41.png" />
+    <Content Include="Assets\SampleData\SamplePhoto42.png" />
+    <Content Include="Assets\SampleData\SamplePhoto43.png" />
+    <Content Include="Assets\SampleData\SamplePhoto44.png" />
+    <Content Include="Assets\SampleData\SamplePhoto45.png" />
+    <Content Include="Assets\SampleData\SamplePhoto46.png" />
+    <Content Include="Assets\SampleData\SamplePhoto47.png" />
+    <Content Include="Assets\SampleData\SamplePhoto48.png" />
+    <Content Include="Assets\SampleData\SamplePhoto49.png" />
+    <Content Include="Assets\SampleData\SamplePhoto5.png" />
+    <Content Include="Assets\SampleData\SamplePhoto50.png" />
+    <Content Include="Assets\SampleData\SamplePhoto51.png" />
+    <Content Include="Assets\SampleData\SamplePhoto52.png" />
+    <Content Include="Assets\SampleData\SamplePhoto53.png" />
+    <Content Include="Assets\SampleData\SamplePhoto54.png" />
+    <Content Include="Assets\SampleData\SamplePhoto6.png" />
+    <Content Include="Assets\SampleData\SamplePhoto7.png" />
+    <Content Include="Assets\SampleData\SamplePhoto8.png" />
+    <Content Include="Assets\SampleData\SamplePhoto9.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\titel002.jpg" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Assets\ww2realiticsphoto\262626.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678069-best-world-war-ii-wallpapers-3200x2000-computer.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678075-download-world-war-ii-wallpapers-2560x1600.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678095-download-free-world-war-ii-wallpapers-1920x1080.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678105-download-free-world-war-ii-wallpapers-1925x1263.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678171-best-world-war-ii-wallpapers-1920x1080-for-mac.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678187-most-popular-world-war-ii-wallpapers-1920x1080-for-meizu.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678228-world-war-ii-wallpapers-1920x1080-for-mobile-hd.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678246-world-war-ii-wallpapers-2126x1526-for-mobile-hd.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678266-world-war-ii-wallpapers-1920x1080-4k.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678362-top-world-war-ii-wallpapers-2880x1800.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\678397-download-world-war-ii-wallpapers-2977x1856-for-android-50.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\800px-HyugaAerial.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\Akagi_Osaka.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\beevor_1-062316.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\GettyImages-542884237-2.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\HyugaAerial.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\Japanese aircraft carrier Akagi.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\Japanese battleship Mutsu.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\Kaga_air_ops_1930.jpg" />
+    <Content Include="Assets\ww2realiticsphoto\Marching.jpg" />
+    <Content Include="Assets\第二次世界大戰之中途島海戰%28廣東話%29.mp4" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="Assets\10GENERALS\10GPic\新建 Microsoft Word 文档.docx" />
+    <None Include="Learn World War II in UWP_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learn World War II in UWP.Core\Learn World War II in UWP.Core.csproj">
+      <Project>{80ED932A-0B9C-4B49-9144-E05E71BDCA84}</Project>
+      <Name>Learn World War II in UWP.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

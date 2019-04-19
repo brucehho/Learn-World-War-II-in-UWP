@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Learn_World_War_II_in_UWP.Views.MEDIAPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+          
+
+            <!--<StackPanel Grid.Row="0" Background="Black">
+                <TextBlock x:Name="StatusTextBlock"
+                   Text="Initializing..."
+                   FontSize="22"  
+                   HorizontalAlignment="Center"
+                   Margin="10" FontFamily="Bauhaus 93" FocusVisualPrimaryBrush="#FF9C2828" Foreground="#FF9E9DA2" />
+            </StackPanel>-->
+            <FlipView>
+                
+                <MediaPlayerElement x:Name="mpe2" 
+                            AutoPlay="False"     Source="ms-appx:///Assets/第二次世界大戰之中途島海戰(廣東話).mp4"
+                            AreTransportControlsEnabled="True">
+                    <MediaPlayerElement.TransportControls>
+                        <MediaTransportControls IsCompact="False"/>
+                    </MediaPlayerElement.TransportControls>
+                </MediaPlayerElement>
+                
+            </FlipView>
+        </Grid>
+    </Grid>
+</Page>

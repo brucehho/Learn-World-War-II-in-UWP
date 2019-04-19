@@ -1,0 +1,687 @@
+﻿<Page
+    x:Class="Learn_World_War_II_in_UWP.Views.HOMEPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+
+            <ScrollViewer Margin="10" VerticalScrollBarVisibility="Auto"  >
+
+                <Hub Header="LEARN WORLD WAR II UWP" x:Name="Hub_SectionHeader"
+                 Margin="0,0,0,10" FontFamily="Broadway"
+                 SectionHeaderClick="Hub_SectionHeader_SectionHeaderClick"
+                     BorderBrush="#FFFFFA50">
+                    <HubSection MaxWidth="1200" 
+                                Header="Home" FontFamily="Century" FontWeight="Bold">
+                        <HubSection.Background>
+                            <AcrylicBrush TintColor="#CC6E6565"/>
+                        </HubSection.Background>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}"
+                                    Text="Welcome to here, this is a test version, If something goes wrong, please contact me ......"/>
+                                <GridView  SelectionMode="None" Margin="3,40,0,0" >
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  Width="250" Height="250"
+                                        Source="/Assets/Head/00/1321.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+
+                                    <FlipView>
+                                        <!--01-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="250" Height="250"
+                                        Source="/Assets/Head/01/head01.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="250" Height="250"
+                                        Source="/Assets/Head/01/b43e728b4710b912568672ccc2fdfc0392452268.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="250" Height="250"
+                                        Source="/Assets/Head/01/9692548028_07f35496d5_b.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--02-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/02/other_none933.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/02/head002.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/02/95644999cf8d204a2193f67852b76c4f.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--03-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/03/head06.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/03/head04.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/03/11879321.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image   Width="250" Height="250"
+                                        Source="/Assets/Head/03/World-War-II-How-have-YOU-aided-the-front-USSR-Soviet-Poster-Canvas-Painting-DIY-Wall.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--04-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/04/150612vintagepropaganda.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/04/headja.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/04/30s_poster_2.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--05-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/06/head05.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/06/head03.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/06/previewfile_1167509232.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/06/s-l1000.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--06-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/05/headcommming.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/05/ww2-war-poster-43.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200"  Margin="0,30,0,0"
+                                        Source="/Assets/Head/05/1280px-INF3-334_Unity_of_Strength_American,_Chinese_and_British_soldiers_with_flags_of_their_countries.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+
+                                    </FlipView>
+                                    <FlipView>
+                                        <!--07-->
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200" Margin="0,30,0,0"
+                                        Source="/Assets/Head/07/headover.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200" Margin="0,30,0,0"
+                                        Source="/Assets/Head/07/head07.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+                                        <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                            <Image  Width="300" Height="200" Margin="0,30,0,0"
+                                        Source="/Assets/Head/07/World20Warposter.jpg"
+                                        Stretch="Uniform" />
+                                        </controls:DropShadowPanel>
+
+                                    </FlipView>
+
+                                </GridView>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection x:Name="MainTopics" Header="MainTopics" FontFamily="Modern No. 20"
+                                IsHeaderInteractive="True" MinWidth="250" MaxWidth="1200"  RequestedTheme="Dark">
+                        <HubSection.Background>
+                            <AcrylicBrush TintColor="#CC2F2C2C"/>
+                        </HubSection.Background>
+                        <DataTemplate>
+                            <StackPanel Margin="5">
+
+                                <TextBlock
+                                Text="第二次世界大战（又简称二次大战、二战、WWII；英语：World War II；法语：Seconde Guerre mondiale；德语：Zweiter Weltkrieg；俄语：Вторая мировая война；日语：第二次世界大戦）是一次自1939年至1945年所爆发的全球军事冲突，整场战争涉及到全球绝大多数的国家，包括所有的大国，并最终分成两个彼此对立的军事同盟─同盟国和轴心国。这次战争是人类史上最大的战争，动员1亿多名军人参与这次军事冲突。主要的参战国纷纷宣布进入总体战状态，几乎将自身国家的全部经济、工业和科学技术用于战争之上，同时将民用和军用的资源合并以便规划。包括有犹太人大屠杀、南京大屠杀、战争中日军对中国军民进行细菌战、以及最终美国对日本首次使用原子弹等事件，使第二次世界大战也是有纪录以来最多大规模民众死亡的军事冲突，全部将近有5000万至7000万人因而死亡，让第二次世界大战成了人类历史上死伤人数最多的战争。第二次世界大战改变世界局势，英国、法国等欧洲殖民帝国衰落，美国和苏联则取代欧洲殖民帝国的地位成了新的超级大国并在战后形成两强格局直到1991年苏联解体。"
+                                TextWrapping="Wrap" Margin="5"
+                                Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <Image Stretch="Uniform" HorizontalAlignment="Center"
+                                       Width="750" Height="450" Margin="5"
+                                       Source="/Assets/GIF/ww2_quarterly.0.gif" VerticalAlignment="Stretch"
+                                   />
+
+
+                                <TextBlock HorizontalAlignment="Center" Margin="10"
+                                    Text="欧洲、大西洋、中国、太平洋、东南亚、中东、地中海、北非；短期于北美洲和南美洲"
+                                Style="{ThemeResource BodyTextBlockStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection x:Name="Generals" Header="Greatest Generals" IsHeaderInteractive="True" 
+        Background="#FFADB4AD" MinWidth="250"  MaxWidth="1200" RequestedTheme="Light">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="Here are the 10 GREATEST GENERALS OF WORLD WAR II"
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock
+                                TextWrapping="Wrap" Margin="10"
+                                Text="通过这篇文章，我们向第二次世界大战中最伟大的将军表示敬意。 如果我们没有让他们做出最艰难的决定并在极度绝望的时候领导部队，那么整个世界的命运就会有所不同。 他们遵循一系列原则。 他们不得不按照它生活或为了它而死。 他们激励了成千上万的人，并使数百万人受到惊 这是第二次世界大战中十大将军的名单。" 
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <Image Margin="5" Width="900" Height="550"
+                               Source="/Assets/Head/headUnited.jpg"
+                                />
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection x:Name="ARTS" Header="Arts" IsHeaderInteractive="True" 
+        Background="#FFB7B2B2" MinWidth="250" MaxWidth="1200"  RequestedTheme="Dark">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Margin="0,2,0,0"
+                                    Text="Here are pictures of World War II Art ......" 
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <GridView  SelectionMode="None"
+                                      >
+                                    <Image x:Name="Animated01" 
+                                Margin="4"  Stretch="Fill" Height="203" Width="299"
+                                Source="/Assets/GIF/giphy.gif" />
+                                    <Image x:Name="Animated02"  Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy01.gif"/>
+                                    <Image x:Name="Animated03"  Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy02.gif"/>
+                                    <Image x:Name="Animated04" Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy7.gif"/>
+                                    <Image x:Name="Animated05" Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy8.gif"/>
+                                    <Image x:Name="Animated06" Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy9.gif"/>
+                                    <Image x:Name="Animated07"  Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy10.gif"/>
+                                    <Image x:Name="Animated08"  Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy11.gif"/>
+                                    <Image x:Name="Animated09" Height="203" Width="299"
+                                Margin="4"  Stretch="Fill"
+                                Source="/Assets/GIF/giphy12.gif"/>
+
+                                </GridView>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection x:Name="MEDIA" Header="Footage" IsHeaderInteractive="True" 
+        Background="#FFADB4AD" MinWidth="250" Width="1200"   RequestedTheme="Light">
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}"
+                                    Text="Here are some World War II videos ......"/>
+                                <FlipView  Margin="0,40,-14,0" Width="1190" Height="589" >
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/800px-HyugaAerial.jpg"
+                                        Stretch="Uniform" HorizontalAlignment="Stretch" Margin="0,0,0,-0.2" VerticalAlignment="Stretch" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/262626.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678069-best-world-war-ii-wallpapers-3200x2000-computer.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678075-download-world-war-ii-wallpapers-2560x1600.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678095-download-free-world-war-ii-wallpapers-1920x1080.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678105-download-free-world-war-ii-wallpapers-1925x1263.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678171-best-world-war-ii-wallpapers-1920x1080-for-mac.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678187-most-popular-world-war-ii-wallpapers-1920x1080-for-meizu.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678228-world-war-ii-wallpapers-1920x1080-for-mobile-hd.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678246-world-war-ii-wallpapers-2126x1526-for-mobile-hd.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678266-world-war-ii-wallpapers-1920x1080-4k.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678362-top-world-war-ii-wallpapers-2880x1800.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/678397-download-world-war-ii-wallpapers-2977x1856-for-android-50.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/Akagi_Osaka.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/beevor_1-062316.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/GettyImages-542884237-2.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/HyugaAerial.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/Japanese aircraft carrier Akagi.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/Japanese battleship Mutsu.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/Kaga_air_ops_1930.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+                                    <controls:DropShadowPanel BlurRadius="2.44"
+                                    ShadowOpacity="0.32"
+                                    OffsetX="2"
+                                    OffsetY="8.16"
+                                    Color="LightGray"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                                        <Image  
+                                        Source="/Assets/ww2realiticsphoto/Marching.jpg"
+                                        Stretch="Uniform" />
+                                    </controls:DropShadowPanel>
+
+
+                                </FlipView>
+                            </Grid>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection x:Name="TIMELINE" Header="Timeline of World War II" IsHeaderInteractive="True" 
+        Background="#FFB0A2A2" Width="1200" MinWidth="250"  RequestedTheme="Dark" >
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="I made a list of the major events of the Second World War"
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+
+                                <Image Stretch="Uniform" Width="922" Height="538"
+                                    HorizontalAlignment="Center"
+                                       Source="/Assets/Head/Infobox_collage_for_WWII.png" VerticalAlignment="Stretch"/>
+                                <TextBlock Text="左上：参加万家岭战役的中国国民革命军部队；
+右上：第一次阿拉曼战役中澳大利亚部队使用25磅炮进行攻击；左中：苏联在斯大林格勒战役上作战；右中：在1943年至1944年东线战场上正在展开攻势的德国斯图卡战机；左下：威廉·凯特尔于1945年5月9日在德国柏林签署《德国无条件投降书》；右下：美国海军在仁牙因湾战役中驶向仁牙因湾海岸。"
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+
+
+                </Hub>
+
+            </ScrollViewer>
+
+
+
+
+
+        </Grid>
+    </Grid>
+</Page>
